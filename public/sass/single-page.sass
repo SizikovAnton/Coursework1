@@ -1,0 +1,186 @@
+@import vars
+
+.product-slider
+    border: 1px solid #eaeaea
+    background-color: #f7f7f7
+    padding: 11px 0 42px 0
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: -86px
+
+    &__arrow
+        padding: 16px 19px
+        background-color: #d8d8d8
+        color: #ffffff
+        font-size: 14px
+        transition: background-color 0.3s
+        cursor: pointer
+
+        &:hover
+            background-color: $pink
+
+    &__image
+
+.product-description
+    border: 1px solid $border_color
+    background-color: #ffffff
+
+    &__flex
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        padding: 73px 260px 122px 260px
+
+    &__category
+        color: #f16d7f
+        font-size: 14px
+        font-weight: 700
+        text-transform: uppercase
+        margin: 0
+
+    &__title
+        color: #4d4d4d
+        font-size: 18px
+        font-weight: 700
+        text-transform: uppercase
+        margin-top: 34px
+        margin-bottom: 0
+
+    &__rating
+
+    &__description
+        color: #5e5e5e
+        font-size: 14px
+        font-weight: 300
+        line-height: 24px
+        text-align: center
+        margin-top: 67px
+        margin-bottom: 0
+
+    &__features
+        display: flex
+        width: 340px
+        justify-content: space-between
+        color: #b9b9b9
+        font-size: 14px
+        font-weight: 700
+        text-transform: uppercase
+        margin-bottom: 0
+        margin-top: 28px
+
+    &__item
+        margin: 0
+
+    &__span
+        color: #2f2f2f
+
+    &__price
+        margin-top: 37px
+        margin-bottom: 43px
+        color: #ef5b70
+        font-size: 24px
+        font-weight: 700
+
+    &__hr
+        width: 100%
+        margin: 0
+        border: 1px solid $border_color
+        background-color: #ef5b70
+
+    &__add-cart
+        margin-top: 28px
+        width: 550px
+        border: 1px solid #ef5b70
+        background-color: #ffffff
+        padding: 16px 0
+        transition: background-color 0.3s
+        cursor: pointer
+
+        &:hover
+            background-color: $pink
+
+        &:hover .product-description__add-cart-text
+            color: $text-color_white
+            &::before
+                background-image: url(../img/index/cart-white.svg)
+
+    &__add-cart-text
+        position: relative
+        padding-left: 41px
+        color: #ef5b70
+        font-size: 16px
+        font-weight: 700
+        display: inline-block
+        transition: color .3s
+
+        &::before
+            position: absolute
+            left: 0
+            top: -4px
+            content: ""
+            background-image: url(../img/single-page/cart-pink.svg)
+            background-repeat: no-repeat
+            background-position: center
+            background-size: 100%
+            width: 26px
+            height: 24px
+            transition: background-image .3s
+
+.product-description-filter
+    margin-top: 63px
+    width: 100%
+    display: flex
+    justify-content: space-around
+
+    &__item
+        width: 144px
+        height: 61px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
+    &__title
+        color: #2f2f2f
+        font-size: 14px
+        font-weight: 700
+        text-transform: uppercase
+        margin-bottom: 16px
+
+    &__select
+        border: 1px solid $border_color
+        background-color: #ffffff
+        color: #bcbcbc
+        font-size: 13px
+        font-weight: 400
+        outline: none
+        padding: 8px 10px 8px 15px
+
+        //line-height: 35
+
+    &__input
+        border: 1px solid $border_color
+        background-color: #ffffff
+        color: #bcbcbc
+        font-size: 14px
+        font-weight: 400
+        outline: none
+        padding: 8px 10px 8px 15px
+
+.product
+    margin-bottom: 0
+
+    &__name
+        color: #6f6e6e
+
+.like-also
+    margin-top: 119px
+
+    &__h2
+        color: #4d4d4d
+        font-size: 24px
+        font-weight: 700
+        text-transform: uppercase
+        margin-bottom: 72px
+        text-align: center

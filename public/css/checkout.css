@@ -1,0 +1,154 @@
+.checkout {
+  margin-top: 89px;
+}
+
+.checkout-section {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.checkout-section__h2 {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 30px 0 30px 0;
+}
+
+.checkout-drop {
+  padding: 0 166px 79px 34px;
+}
+
+.checkout-drop__h3 {
+  color: #222222;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.checkout-drop__text {
+  color: #b3b2b2;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.checkout-drop__text_red {
+  color: #ff0d0d;
+  margin-top: 22px;
+}
+
+.checkout-drop__radio-text {
+  color: #222222;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 20px;
+  line-height: 13px;
+  position: relative;
+}
+
+.checkout-drop__radio-text_margin-top {
+  margin-top: 34px;
+}
+
+.checkout-drop__radio-text_margin-bottom {
+  margin-bottom: 33px;
+}
+
+.checkout-drop__radio {
+  display: none;
+}
+
+.checkout-drop__label {
+  cursor: pointer;
+}
+
+.checkout-drop__label::before {
+  content: "";
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  color: #555555;
+  margin-right: 15px;
+  background-image: url(../img/checkout/circle-regular.svg);
+  background-repeat: no-repeat;
+  position: relative;
+  top: 3px;
+}
+
+.checkout-drop__radio:checked + .checkout-drop__label::before {
+  background-image: url(../img/checkout/dot-circle-regular.svg);
+}
+
+.checkout-drop__button {
+  border: 1px solid #eaeaea;
+  background-color: #fff;
+  color: #4a4a4a;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 54px;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+.checkout-drop__button:hover {
+  background-color: #f16d7f;
+  color: #ffffff;
+}
+
+.checkout-drop__h4 {
+  color: #222222;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 23px 0 15px 0;
+}
+
+.checkout-drop__input {
+  border: 1px solid #eaeaea;
+  height: 43px;
+  min-width: 370px;
+  outline: none;
+  color: #b1b1b1;
+  font-size: 13px;
+  font-weight: 300;
+  padding-left: 18px;
+}
+
+.checkout-drop-login__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: auto;
+}
+
+.checkout-drop-login__text {
+  color: #222222;
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 32px;
+}
+
+.checkout-drop-login__text:hover {
+  color: #f16d7f;
+}
+
+.checkout-drop__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 346px;
+}

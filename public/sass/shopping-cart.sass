@@ -1,0 +1,167 @@
+@import vars
+
+.cart-table
+    width: 100%
+    margin-top: 90px
+    margin-bottom: 44px
+    
+    &__title
+        color: $text_color_brown
+        font-size: 13px
+        font-weight: 700
+        text-transform: uppercase
+        letter-spacing: -0.2px
+        border-bottom: 1px solid $border_color
+        padding: 20px 20px
+        text-align: center
+        &:first-of-type
+            text-align: left
+            padding: 20px 20px 20px 0
+        &:last-of-type
+            width: 1px
+            padding: 20px 0 
+    &__input
+        width: 54px
+        height: 30px
+        text-align: center
+        outline: none
+        border: 1px solid $border_color
+        &::-webkit-outer-spin-button, &::-webkit-inner-spin-button
+            -webkit-appearance: none
+    &__cross
+        font-size: 15px
+        color: #c0c0c0
+        cursor: pointer
+        &:hover
+            color: $pink
+    
+    &__td
+        border-bottom: 1px solid $border_color
+        padding: 20px 0
+        text-align: center
+        color: $shop_cart_text_color
+        font-size: 13px
+        font-weight: 400
+
+    &__shipping
+        text-transform: uppercase
+
+.cart-product
+    display: flex
+    flex-direction: row
+    &__img
+        height: 115px
+    &__description
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        margin-left: 21px
+        text-align-last: left
+        padding: 13px 0
+        font-size: 13px
+
+    &__title
+        color: $text_color_brown
+        font-weight: 700
+        text-transform: uppercase
+
+    &__feature
+        color: #6f6e6e
+        font-weight: 700
+
+    &__span
+        color: #575757
+        font-weight: 300
+        margin-left: 5px
+
+.button-cart-page
+    border: 1px solid $border_color
+    color: $text_color_gray
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    padding: 20px 39px
+    transition: background-color 0.3s, color 0.3s
+    cursor: pointer
+    &:hover
+        background-color: $pink
+        color: $text-color-white
+    &_form 
+        background-color: #fff
+        padding: 12px 15px
+        color: $text_color_gray
+        font-size: 11px
+        font-weight: 700
+        text-transform: uppercase
+        max-width: 120px
+        //display: inline-block
+    &_big-pink
+        background-color: $pink
+        color: $text_color_white
+        font-size: 16px
+        font-weight: 700
+        text-transform: uppercase
+        &:hover
+            background-color: #fff
+            color: $text_color_gray
+
+.form-cart-page
+    margin-top: 60px
+    display: flex
+    flex-direction: column
+
+    &__h3
+        color: $text_color_brown
+        font-size: 16px
+        font-weight: 700
+        text-transform: uppercase
+        margin-bottom: 20px
+
+    &__select, &__input
+        border: 1px solid $border_color
+        //max-width: 355px
+        height: 45px
+        margin-bottom: 20px
+        outline: none
+        color: #b1b1b1
+        font-size: 13px
+        font-weight: 300
+
+    &__select 
+        padding: 15px 12px 15px 18px
+        width: 355px
+    &__input
+        padding-left: 18px
+        width: 335px
+        &::placeholder
+            color: #b1b1b1
+
+    &__text 
+        margin: 8px 0 24px 0
+        color: #000000
+        font-size: 14px
+        font-weight: 300
+
+.total-cart-page 
+    margin-top: 60px
+    padding: 40px
+    background-color: #f5f3f3
+    text-align: right
+    &__sub 
+        color: $text_color_gray
+        font-size: 11px
+        font-weight: 400
+        text-transform: uppercase
+    &__sub-price, &__total-price
+        margin-left: 20px
+
+    &__total 
+        color: $text_color_brown
+        font-size: 16px
+        font-weight: 700
+        text-transform: uppercase
+        margin: 14px 0 40px 0
+
+    &__total-price
+        color: $pink
+

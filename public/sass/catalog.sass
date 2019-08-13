@@ -1,0 +1,228 @@
+@import vars
+
+.catalog
+    margin-top: 60px
+
+.left-filter
+    &__details
+        min-width: 243px
+        margin-bottom: 18px
+
+    &__summary
+        max-width: 100%
+        width: 100%
+        height: 37px
+        border-bottom: 1px solid #ebebeb
+        border-left: 5px solid #ef5b70
+        cursor: pointer
+        display: block
+        outline: none
+        padding-left: 10px
+        color: #ef5b70
+        font-size: 14px
+        font-weight: 700
+        text-transform: uppercase
+        line-height: 37px
+        position: relative
+
+    &__ul
+        max-width: 100%
+        width: 100%
+        list-style: none
+        padding-left: 15px
+
+    &__li
+        width: 100%
+        overflow: hidden
+
+    &__link
+        width: 100%
+        color: #6f6e6e
+        font-size: 14px
+        font-weight: 400
+        display: block
+        padding: 0.5em 0
+        max-width: 100%
+
+    &__summary::-webkit-details-marker
+        display: none
+
+    &__summary::after
+        position: absolute
+        bottom: 4px
+        right: 6px
+        content: "🞃"
+        color: #ef5b70
+        font-size: 14px
+        font-weight: 400
+        line-height: 37px
+
+    &__details[open] > &__summary::after
+        position: absolute
+        top: 4px
+        right: 6px
+        content: "🞁"
+        color: #ef5b70
+        font-size: 14px
+        font-weight: 400
+        line-height: 37px
+
+.catalog-right
+    width: 847px
+
+    &__products
+        display: flex
+        flex-flow: row wrap
+        justify-content: space-between
+        margin-top: 48px
+
+.top-filter
+    &__column
+        position: relative
+        width: 30%
+        display: flex
+        flex-wrap: wrap
+        color: #6f6e6e
+        font-size: 14px
+        font-weight: 400
+
+        //padding: 0 15px
+
+    &__h3
+        width: 100%
+        margin-bottom: 25px
+
+    &__trend
+        //width: 30%
+
+        margin: 5px 30px 5px 0
+        cursor: pointer
+
+    &__input-hidden
+        &:checked + .top-filter__trend
+            border-bottom: 1px dashed $pink
+            margin-bottom: 4px
+
+    &__input
+        &:checked + .top-filter__size-label::before
+            background-color: $pink
+
+    &__size-label
+        width: 25%
+        margin: 4px 0
+        padding: 0
+        cursor: pointer
+
+        &::before
+            position: relative
+            top: 2px
+            display: inline-block
+            content: ""
+            height: 13px
+            width: 13px
+            border: 1px solid #ebebeb
+            background-color: #ffffff
+            margin: 0 9px 0 0
+
+.catalog-sort
+    height: 50px
+    margin-top: 40px
+    padding-left: 10px
+    background-color: #f3f3f3
+    display: flex
+    align-items: center
+    color: #6f6e6e
+    font-size: 14px
+    font-weight: 400
+
+    &__div
+        height: 30px
+        border: 1px solid #ebebeb
+        background-color: #ffffff
+        margin-right: 10px
+        padding-right: 3px
+
+    &__span
+        margin: 0 10px 0 15px
+
+    &__select
+        height: 100%
+        border: none
+        border-left: 1px solid #ebebeb
+        color: #6f6e6e
+        font-size: 14px
+        font-weight: 400
+        padding: 0 15px 0 10px
+        outline: none
+
+.pagination
+    height: 44px
+    margin-top: 43px
+
+    &__pages
+        border-radius: 3px
+        border: 1px solid #ebebeb   
+        line-height: 44px
+
+    &__link
+        color: #c4c4c4
+        font-size: 16px
+        font-weight: bold
+        margin-left: 15px
+        &:last-child
+            margin-right: 15px
+        &:hover
+            color: $pink
+        
+
+    &__arrow
+        font-size: 16px
+        color: #aaaaaa
+        &:hover
+            color: $pink
+
+    &__doted
+        color: #c4c4c4
+        font-size: 16px
+        font-weight: bold
+        margin-right: -15px
+
+    &__view-all 
+        line-height: 44px
+        display: inline-block
+        color: #ef5b70
+        font-size: 16px
+        font-weight: bold
+        border-radius: 3px
+        border: 1px solid #ef5b70
+        padding: 0 45px
+        transition: background-color 0.3s, color .3s
+        &:hover
+            background-color: $pink
+            color: $text-color_white
+
+.promo-bottom 
+    height: 341px
+    background-color: #222224
+    margin-top: 110px
+    margin-bottom: -97px
+
+    &__topic 
+        text-align: center
+        width: 28%
+    &__topic img 
+        height: 40px
+
+    &__text 
+        color: #fbfbfb
+        font-size: 14px
+        font-weight: 300
+        letter-spacing: 0.35px
+        line-height: 1.6em
+
+    &__title 
+        color: #fbfbfb
+        font-size: 20px
+        font-weight: 700
+        letter-spacing: 0.5px
+        margin: 23px 0 17px 0

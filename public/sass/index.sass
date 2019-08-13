@@ -1,0 +1,180 @@
+@import vars
+
+.promo
+    background-color: #e8e8e8
+
+    &__content
+        height: 613px
+        display: flex
+        align-items: center
+        background-image: url(../img/index/promo.jpg)
+        background-position-y: -52px
+
+    &__text
+        margin-left: 3px
+        border-left: 12px solid #f16d7f
+        padding-left: 12px
+
+    &__brand
+        color: #222222
+        font-weight: 700
+        text-transform: uppercase
+        font-size: 60px
+        letter-spacing: 1.5px
+        line-height: 40px
+        margin: 0 0 20px 0
+
+    &__fashion
+        color: #222222
+        font-size: 40px
+        font-weight: 700
+        text-transform: uppercase
+        letter-spacing: 1px
+        line-height: 30px
+        margin: 0
+
+.news
+    margin-top: 98px
+
+    &__content
+        height: 823px
+        display: flex
+        flex-flow: column wrap
+        justify-content: space-between
+        align-content: space-between
+        overflow: hidden
+
+    &__item
+        position: relative
+        overflow: hidden
+
+        &:hover .news__text-div
+            min-width: 100%
+            text-align: center
+
+
+    &__text-div
+        position: absolute
+        background-color: #fff
+        padding: 16px 20px
+        top: 26px
+        z-index: 50
+        color: #222222
+        font-size: 18px
+        font-weight: 700
+        text-transform: uppercase
+        letter-spacing: 0.45px
+        min-width: 100px
+        transition: min-width .5s
+
+    &__text
+        margin: 0
+
+    &__category
+        font-size: 30px
+        letter-spacing: 0.75px
+        margin: 5px 0 0 0
+
+.fetured 
+    margin-top: 100px
+    text-align: center
+
+    &__headline 
+        color: #222222
+        font-size: 30px
+        font-weight: 700
+        letter-spacing: 0.75px
+        text-align: center
+
+        &-p 
+            margin: 0 0 10px 0
+
+        &-sub 
+            color: #9f9f9f
+            font-size: 14px
+            font-weight: 400
+            letter-spacing: 0.35px
+
+    &__catalog 
+        display: flex
+        flex-flow: row wrap
+        justify-content: space-between
+        margin-top: 60px
+
+    &__button 
+        background-color: #f16d7f
+        margin-top: 58px
+        padding: 18px 43px 19px 24px
+        color: #ffffff
+        font-size: 16px
+        font-weight: 700
+        letter-spacing: 0.4px
+        background-image: url(../img/index/fetured-arrow.png)
+        background-repeat: no-repeat
+        background-position: right 19px center
+        transition: padding .3s, background-position .3s
+        //overflow: hidden
+        &:hover
+            padding: 18px 60px 19px 40px
+            background-position: right 35px center
+
+.promo2 
+    position: relative
+    height: 529px
+    margin-top: 113px
+    background-color: #222224
+    background-image: url(../img/index/promo2.jpg)
+    background-repeat: no-repeat
+
+    &__text-offer
+        position: absolute
+        left: 39px
+        top: 146px
+
+    &__offer 
+        color: #ffffff
+        font-size: 54px
+        font-weight: 700
+        text-transform: uppercase
+        letter-spacing: 1.5px
+        margin: 0
+
+    &__women 
+        color: #ffffff
+        font-size: 32px
+        font-weight: 700
+        text-transform: uppercase
+        letter-spacing: 0.9px
+        margin: 0
+
+    &__right 
+        position: absolute
+        width: 373px
+        height: 100%
+        right: 0
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: center
+
+    &__topic 
+        width: 294px
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+
+    &__text 
+        width: 220px
+        color: #fbfbfb
+        font-size: 14px
+        font-weight: 300
+        letter-spacing: 0.35px
+        line-height: 24px
+
+    &__text-title 
+        color: #fbfbfb
+        font-size: 20px
+        font-weight: 700
+        letter-spacing: 0.5px
+        text-transform: none
+        margin: 6px 0 15px 0

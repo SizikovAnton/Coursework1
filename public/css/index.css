@@ -1,0 +1,239 @@
+.promo {
+  background-color: #e8e8e8;
+}
+
+.promo__content {
+  height: 613px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../img/index/promo.jpg);
+  background-position-y: -52px;
+}
+
+.promo__text {
+  margin-left: 3px;
+  border-left: 12px solid #f16d7f;
+  padding-left: 12px;
+}
+
+.promo__brand {
+  color: #222222;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 60px;
+  letter-spacing: 1.5px;
+  line-height: 40px;
+  margin: 0 0 20px 0;
+}
+
+.promo__fashion {
+  color: #222222;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.news {
+  margin-top: 98px;
+}
+
+.news__content {
+  height: 823px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  overflow: hidden;
+}
+
+.news__item {
+  position: relative;
+  overflow: hidden;
+}
+
+.news__item:hover .news__text-div {
+  min-width: 100%;
+  text-align: center;
+}
+
+.news__text-div {
+  position: absolute;
+  background-color: #fff;
+  padding: 16px 20px;
+  top: 26px;
+  z-index: 50;
+  color: #222222;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.45px;
+  min-width: 100px;
+  -webkit-transition: min-width .5s;
+  transition: min-width .5s;
+}
+
+.news__text {
+  margin: 0;
+}
+
+.news__category {
+  font-size: 30px;
+  letter-spacing: 0.75px;
+  margin: 5px 0 0 0;
+}
+
+.fetured {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.fetured__headline {
+  color: #222222;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  text-align: center;
+}
+
+.fetured__headline-p {
+  margin: 0 0 10px 0;
+}
+
+.fetured__headline-sub {
+  color: #9f9f9f;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+}
+
+.fetured__catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 60px;
+}
+
+.fetured__button {
+  background-color: #f16d7f;
+  margin-top: 58px;
+  padding: 18px 43px 19px 24px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  background-image: url(../img/index/fetured-arrow.png);
+  background-repeat: no-repeat;
+  background-position: right 19px center;
+  -webkit-transition: padding .3s, background-position .3s;
+  transition: padding .3s, background-position .3s;
+}
+
+.fetured__button:hover {
+  padding: 18px 60px 19px 40px;
+  background-position: right 35px center;
+}
+
+.promo2 {
+  position: relative;
+  height: 529px;
+  margin-top: 113px;
+  background-color: #222224;
+  background-image: url(../img/index/promo2.jpg);
+  background-repeat: no-repeat;
+}
+
+.promo2__text-offer {
+  position: absolute;
+  left: 39px;
+  top: 146px;
+}
+
+.promo2__offer {
+  color: #ffffff;
+  font-size: 54px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin: 0;
+}
+
+.promo2__women {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+  margin: 0;
+}
+
+.promo2__right {
+  position: absolute;
+  width: 373px;
+  height: 100%;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.promo2__topic {
+  width: 294px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.promo2__text {
+  width: 220px;
+  color: #fbfbfb;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.35px;
+  line-height: 24px;
+}
+
+.promo2__text-title {
+  color: #fbfbfb;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: none;
+  margin: 6px 0 15px 0;
+}

@@ -1,0 +1,134 @@
+@import vars
+
+.checkout
+    margin-top: 89px
+
+.checkout-section
+    border-bottom: 1px solid #e8e8e8
+
+    &__h2
+        color: $text_color_brown
+        font-size: 16px
+        font-weight: 700
+        text-transform: uppercase
+        margin: 30px 0 30px 0
+
+.checkout-drop
+    padding: 0 166px 79px 34px
+
+    &__h3
+        color: $text_color_brown
+        font-size: 13px
+        font-weight: 700
+        text-transform: uppercase
+
+    &__text
+        color: #b3b2b2
+        font-size: 13px
+        font-weight: 400
+        margin-top: 10px
+
+        &_red
+            color: #ff0d0d
+            margin-top: 22px
+
+    &__radio-text
+        color: $text_color_brown
+        font-size: 12px
+        font-weight: 700
+        text-transform: uppercase
+        margin-top: 20px
+        line-height: 13px
+        position: relative
+
+        &_margin-top
+            margin-top: 34px
+
+        &_margin-bottom
+            margin-bottom: 33px
+
+    &__radio
+        //border: 2px solid #555555
+        //background-color: #fff
+        //margin-right: 15px
+        //position: relative
+        //top: 2px
+        display: none
+    &__label
+        cursor: pointer
+        &::before
+            content: ""
+            display: inline-block
+            height: 14px
+            width: 14px
+            color: #555555
+            //font-size: 14px
+            margin-right: 15px
+            background-image: url(../img/checkout/circle-regular.svg)
+            background-repeat: no-repeat
+            position: relative
+            top: 3px
+    &__radio:checked + &__label::before
+        background-image: url(../img/checkout/dot-circle-regular.svg)
+
+    &__button
+        border: 1px solid $border_color
+        background-color: #fff
+        color: $text_color_gray
+        font-size: 14px
+        font-weight: 700
+        text-transform: uppercase
+
+        //position: absolute
+        //bottom: 0
+        padding: 10px 54px
+        transition: background-color 0.3s, color 0.3s
+        cursor: pointer
+
+        //justify-self: flex-end
+        margin-top: auto
+
+        &:hover
+            background-color: $pink
+            color: $text-color-white
+
+    &__h4
+        color: $text_color_brown
+        font-size: 12px
+        font-weight: 700
+        text-transform: uppercase
+        margin: 23px 0 15px 0
+
+    &__input
+        border: 1px solid $border_color
+        height: 43px
+        min-width: 370px
+        outline: none
+        color: #b1b1b1
+        font-size: 13px
+        font-weight: 300
+        padding-left: 18px
+
+    &-login__div
+        display: flex
+        align-items: center
+
+        //justify-items: flex-end
+        margin-top: auto
+
+    &-login__text
+        color: $text_color_brown
+        font-size: 14px
+        font-weight: 700
+        margin-left: 32px
+
+        &:hover
+            color: $pink
+
+    &__form
+        //position: relative
+        //height: 350px
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        height: 346px
